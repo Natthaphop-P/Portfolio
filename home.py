@@ -12,7 +12,7 @@ from contact_form import contact
 
  # Page setup
 st.set_page_config(
-    page_title="archana",
+    page_title="Natthaphop",
     page_icon="📋",
     layout="wide",
 )
@@ -25,11 +25,11 @@ def gradient(color1, color2, color3, content1, content2):
                 unsafe_allow_html=True)
 def aboutMe():
     col1, col2 = st.columns(2)
-    full_name = "Archana"
-    info = {'Intro': "Data scientist"}
+    # full_name = "Archana"
+    # info = {'Intro': "Data scientist"}
 
     with col1:
-        st.markdown("<h2 style='text-align: center; '>Hello! I'm Archana 👋</h2>", unsafe_allow_html=True)
+        st.markdown("<h2 style='text-align: center; '>Hello! I'm Natthaphop 👋</h2>", unsafe_allow_html=True)
 
         st.markdown("""
         <style>
@@ -38,15 +38,11 @@ def aboutMe():
         }
         </style>
         <div class="justify-text">
-        
-        I am a dedicated Data Scientist with over 4 years of professional experience in the dynamic fields of 
-        machine learning and artificial intelligence. I have a proven track record in developing innovative ML models, 
-        conducting in-depth data analysis, and implementing data-driven solutions that significantly impact business outcomes.
-        
-        I have successfully led projects across various stages of the data lifecycle, from data collection and cleaning to 
-        feature engineering, modeling, and validation. I hold a Master's in Electronics (Signal Processing) and a 
-        Bachelor's in Electronics and Communication 
-        Engineering. I am passionate about continuous learning and advancing in the AI field.
+        I'm an Application Engineer with expertise in 2D vision camera systems, 3D camera,
+        machine vision, and industrial automation. Strong background in image
+        processing, computer vision, and deep learning with hands-on experience in
+        integrating and troubleshooting vision systems in industrial environments.
+        Passionate about optimizing automation processes and delivering highperformance solutions.
         </div>
         """, unsafe_allow_html=True)
         c1,c2, c3 =st.columns(3)
@@ -78,7 +74,8 @@ def get_base64_image(image_path):
         return base64.b64encode(img_file.read()).decode()
 
 # Get the base64 string of the image
-logo_base64 = get_base64_image("Image.jpeg")
+# image profile 
+logo_base64 = get_base64_image("profile.png")
 
 # Logo styling
 logo_html = f"""
@@ -108,7 +105,7 @@ with st.sidebar:
     # Option menu in sidebar
     pages = ["About me", "Resume", "Experience",  "Projects", "Testimonials", "Contact"]
     nav_tab_op = option_menu(
-        menu_title="Archana",
+        menu_title="Nathaphop",
         options=pages,
         icons=['person-fill', 'file-text', 'briefcase', 'folder', 'star', 'envelope'],
         menu_icon="cast",
