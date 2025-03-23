@@ -9,6 +9,7 @@ from experience_page import experience
 from upwork_page import feedbackRating
 from project_page import projects
 from contact_form import contact
+import streamlit.components.v1 as components
 
 
 
@@ -19,33 +20,36 @@ st.set_page_config(
     layout="wide",
 )
 
-# Inject meta tags into the app
-# <head>
-meta_tags = """
-
-    <title>Natthaphop Portfolio!</title>
+# **Inject Meta Tags using st.components.v1.html()**
+meta_html = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Primary Meta Tags -->
     <meta name="title" content="Natthaphop Portfolio!" />
-    <meta name="description" content="I'm an Application Engineer with expertise in 2D and 3D Vision System and software development" />
+    <meta name="description" content="I'm an Application Engineer with expertise in 2D and 3D Vision Systems and software development." />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:url" content="https://yourdomain.com/" />
     <meta property="og:title" content="Natthaphop Portfolio!" />
-    <meta property="og:description" content="I'm an Application Engineer with expertise in 2D and 3D Vision System and software development" />
-    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+    <meta property="og:description" content="I'm an Application Engineer with expertise in 2D and 3D Vision Systems and software development." />
+    <meta property="og:image" content="https://yourdomain.com/image.png" />
 
-    <!-- Twitter -->
+    <!-- Twitter Meta Tags -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta property="twitter:url" content="https://yourdomain.com/" />
     <meta property="twitter:title" content="Natthaphop Portfolio!" />
-    <meta property="twitter:description" content="I'm an Application Engineer with expertise in 2D and 3D Vision System and software development" />
-    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
-
+    <meta property="twitter:description" content="I'm an Application Engineer with expertise in 2D and 3D Vision Systems and software development." />
+    <meta property="twitter:image" content="https://yourdomain.com/image.png" />
+</head>
+<body>
+</body>
+</html>
 """
-# </head>
 
-# Display the meta tags
-st.markdown(meta_tags, unsafe_allow_html=True)
+# **Display the Meta Tags (Set height to 0 to keep it hidden)**
+components.html(meta_html, height=0)
 
 
 def gradient(color1, color2, color3, content1, content2):
