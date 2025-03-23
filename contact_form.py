@@ -34,11 +34,14 @@ def contact():
                   quality='high',
                   )
 
+    # components.html(
+    #     f"""
+    #      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScLaMWyScjbqoo6I5w5MtoQwfSU-Izghn1y_jsTP-yuf5zZOA/viewform?embedded=true" width="640" height="741" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    #     """,
+    #     height=1800,
+    # )
     components.html(
-        f"""
-         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScLaMWyScjbqoo6I5w5MtoQwfSU-Izghn1y_jsTP-yuf5zZOA/viewform?embedded=true" width="640" height="741" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        """,
-        height=1800,
+        f'<p><a href="mailto:natthaphop.phat@gmail.com">natthaphop.phat@gmail.com</a></p>'
     )
 
 
