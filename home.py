@@ -10,12 +10,42 @@ from upwork_page import feedbackRating
 from project_page import projects
 from contact_form import contact
 
+
+
  # Page setup
 st.set_page_config(
     page_title="Natthaphop",
     page_icon="📋",
     layout="wide",
 )
+
+# Inject meta tags into the app
+# <head>
+meta_tags = """
+
+    <title>Natthaphop Portfolio!</title>
+    <meta name="title" content="Natthaphop Portfolio!" />
+    <meta name="description" content="I'm an Application Engineer with expertise in 2D and 3D Vision System and software development" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="Natthaphop Portfolio!" />
+    <meta property="og:description" content="I'm an Application Engineer with expertise in 2D and 3D Vision System and software development" />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta property="twitter:title" content="Natthaphop Portfolio!" />
+    <meta property="twitter:description" content="I'm an Application Engineer with expertise in 2D and 3D Vision System and software development" />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+"""
+# </head>
+
+# Display the meta tags
+st.markdown(meta_tags, unsafe_allow_html=True)
 
 
 def gradient(color1, color2, color3, content1, content2):
@@ -94,8 +124,7 @@ logo_html = f"""
     </style>
     <div class="logo-container">
         <img src="data:image/png;base64,{logo_base64}" class="logo">
-    </div>
-"""
+    </div>"""
 
 # Display logo in the sidebar
 st.sidebar.markdown(logo_html, unsafe_allow_html=True)
