@@ -79,10 +79,10 @@ def aboutMe():
         Passionate about optimizing automation processes and delivering highperformance solutions.
         </div>
         """, unsafe_allow_html=True)
-        c1,c2, c3 =st.columns(3)
-        c1.markdown("""**[GitHub](https://github.com/archanags001)**""")
-        c2.markdown("""**[LinkedIn](https://www.linkedin.com/in/archanags001)** """)
-        c3.markdown("""**[Upwork](https://www.upwork.com/freelancers/~010f3758a004ea64dd?viewMod%20e)**""")
+        # c1,c2, c3 =st.columns(3)
+        # c1.markdown("""**[GitHub](https://github.com/archanags001)**""")
+        # c2.markdown("""**[LinkedIn](https://www.linkedin.com/in/archanags001)** """)
+        # c3.markdown("""**[Upwork](https://www.upwork.com/freelancers/~010f3758a004ea64dd?viewMod%20e)**""")
 
 
     path = "Animation_blue_robo.json"
@@ -151,11 +151,14 @@ if nav_tab_op == "About me":
 elif nav_tab_op == "Resume":
     resume()
 elif nav_tab_op == "Experience":
-    experience()
+    # experience()
+    ""
 elif nav_tab_op == "Testimonials":
-    feedbackRating()
+    # feedbackRating()
+    ""
 elif nav_tab_op == "Projects":
-    projects()
+    # projects()
+    ""
 elif nav_tab_op == "Contact":
     contact()
 

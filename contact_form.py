@@ -148,10 +148,11 @@ def contact():
     # Contact Information
     st.markdown("""
         <div class="contact-info">        
-        📞 +66 (203) 302-9545<br>
+        
         ✉️ natthahpop.phat@gmail.com
         </div>
     """, unsafe_allow_html=True)  ## 📍 151 New Park Ave, Hartford, CT 06106, United States<br>
+    #📞 +66 (203) 302-9545<br>
 
     # Social Media Icons (using emoji placeholders since we can't directly use images in this setup)
     # st.markdown("""
